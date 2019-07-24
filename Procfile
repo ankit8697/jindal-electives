@@ -1,0 +1,1 @@
+web: gunicorn jindal_electives.wsgi
