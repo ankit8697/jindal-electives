@@ -1,0 +1,42 @@
+{% extends "electives/base.html" %}
+{% block content %}
+
+<h1>Electives Detail</h1>
+<article class="media content-section">
+    <div class="media-body">
+        <h2 class="article-title">{{ elective.name }}</h2>
+        <p class="article-content">Professor: {{ elective.professor }}</p>
+        <p class="article-content">School: {{ elective.school }}</p>
+        <p class="article-content">Credits: {{ elective.credit }}</p>
+        <p class="article-content">Cross Listed: {{ elective.cross }}</p>
+    </div>
+</article>
+<hr>
+<a class="btn btn-default" href="{% url 'add_comment_to_elective' pk=elective.pk %}">Add comment</a>
+<ul class="list-unstyled list-group mb-4">
+    {% for comment in comments.all %}
+    <li class="media list-group-item mb-2 mt-2">
+        <div class="media-body column">
+            <p class="row">{{ comment.body|linebreaks }}</p>
+            <!-- <div class="row voting">
+                <i class="column mr-3 fa fa-thumbs-up" onclick="increment(comment)">    {{ comment.upvotes }}</i>
+                <i class="column mr-4 fa fa-thumbs-down" onclick="decrement(comment)">    {{ comment.downvotes }}</i>
+            </div> -->
+        </div>
+    </li>
+    {% empty %}
+    <p>No comments here yet</p>
+    {% endfor %}
+</ul>
+
+<script>
+    function increment(comment) {
+        comment.increment();
+    }
+
+    function decrement(comment) {
+        comment.decrement();
+    }
+</script>
+
+{% endblock content %}

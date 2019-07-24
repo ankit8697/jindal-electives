@@ -1,0 +1,26 @@
+
+{% extends "electives/base.html" %}
+{% load comments %}
+{% block content %}
+
+    <h1>List of Electives available at JGU</h1>
+    <h5>Click on an elective title to see more details and leave reviews.</h5>
+    <!-- <form method="post" class="mb-4 mt-4">
+        <label for="search">Search by Name, Professor, or School:</label>
+        <input type="text" name="search" id="search">
+        <button type="submit">Search</button>
+    </form> -->
+    {% for elective in electives %}
+    <article class="media content-section">
+        <div class="media-body">
+           <h2>
+               <a class="article-title" href="{% url 'electives-detail' elective.id %}">{{ elective.name }}</a>
+           </h2>
+           <p class="article-content">Professor: {{ elective.professor }}</p>
+           <p class="article-content">School: {{ elective.school }}</p>
+           <!-- <a href="{% url 'electives-detail' pk=elective.pk %}">Comments: {{ comments.all.count }}</a> -->
+        </div>
+    </article>
+    {% endfor %}
+
+{% endblock content %}
