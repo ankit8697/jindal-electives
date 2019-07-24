@@ -38,7 +38,6 @@ Jinja2==2.10.1
 jsonpatch==1.10
 jsonpointer==1.9
 kiwisolver==1.0.1
-language-selector==0.1
 Markdown==2.6.11
 MarkupSafe==0.23
 matplotlib==2.2.2
