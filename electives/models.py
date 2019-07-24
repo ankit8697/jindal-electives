@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Elective(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=300)
     professor = models.CharField(max_length=100)
     credit = models.IntegerField()
     school = models.CharField(max_length=100)
