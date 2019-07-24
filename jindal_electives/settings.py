@@ -25,7 +25,7 @@ SECRET_KEY = '33uee+tb8@3f&wj^b$xef_*@(e5a@lj!qnmotukxy&^dx-46mk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jindal-electives-review.herokuapp.com']
 
 
 # Application definition
