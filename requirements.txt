@@ -11,8 +11,6 @@ certifi==2018.10.15
 cffi==1.11.5
 chardet==2.3.0
 Click==7.0
-cloud-init==18.5
-command-not-found==0.3
 configobj==5.0.6
 coverage==4.5.3
 cycler==0.10.0
