@@ -1,2 +1,2 @@
-# jindal-electives
-Jindal Global University elective ranking website
+# Jindal Electives Review
+Jindal Global University elective reviewing website
