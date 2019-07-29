@@ -1,4 +1,4 @@
-absl-py==0.2.2
+bsl-py==0.2.2
 astor==0.6.2
 astroid==2.2.5
 backcall==0.1.0
