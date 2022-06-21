@@ -44,7 +44,7 @@ Markdown==2.6.11
 MarkupSafe==0.23
 matplotlib==2.2.2
 mccabe==0.6.1
-numpy==1.14.5
+numpy==1.22.0
 oauthlib==1.0.3
 odfpy==1.4.0
 openpyxl==2.6.2
